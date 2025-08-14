@@ -1,3 +1,30 @@
+# CXG Processor Pipeline
+
+A pipeline for pulling data from cellXgene and undertaking some basic preprocessing.
+
+## User Story
+
+As a single-cell Bioinformatician, I want to automate my single-cell analysis, so that my workflow is faster.
+
+## MVP
+
+Automated pipeline to take CXG data and apply scanpy preprocessing.
+
+## Stretch Goal
+
+Continue the pipeline to GeneSwitches.
+
+## Output Structure
+
+Each run generates a directory containing:
+- the data,
+- a logfile,
+- a config file,
+- any graphical outputs (e.g. UMAPs, QC metrics),
+- and the processed object saved as a `.h5ad` file.
+
+-----------------------
+
 # Cellxgene Census H5AD Downloader
 
 A Python application for downloading and querying h5ad files using the [cellxgene-census](https://github.com/chanzuckerberg/cellxgene-census) package with YAML configuration support. This tool is designed to efficiently access single-cell transcriptomics datasets from the CZ CELLxGENE Discover Census and download datasets from various sources.
@@ -313,3 +340,7 @@ For issues and questions:
 - URL validation
 - Comprehensive logging
 - Command-line interface
+
+
+
+
