@@ -4,7 +4,7 @@ A pipeline for pulling data from cellXgene and undertaking some basic preprocess
 
 ## User Story
 
-As a single-cell Bioinformatitian, I want to automate my single-cell analysis, so that my workflow is faster.
+As a single-cell Bioinformatician, I want to automate my single-cell analysis, so that my workflow is faster.
 
 ## MVP
 
