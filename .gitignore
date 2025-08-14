@@ -211,3 +211,4 @@ __marimo__/
 
 # output of runs/analysis
 analyses/**
+!analyses/2025-08-14_analysis001_EXAMPLE/**
