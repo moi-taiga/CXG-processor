@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# scanpy
+*.h5ad
+
+# output of runs/analysis
+analyses/**

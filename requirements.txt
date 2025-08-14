@@ -1,0 +1,6 @@
+scanpy
+anndata
+pyyaml
+matplotlib
+pandas
+geneswitches
