@@ -1,0 +1,14 @@
+name: cxg-processor
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - scanpy
+  - anndata
+  - pyyaml
+  - matplotlib
+  - pandas
+  - pip
+  - pip:
+      - geneswitches
