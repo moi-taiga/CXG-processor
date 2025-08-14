@@ -16,7 +16,7 @@ from unittest.mock import patch, MagicMock
 # Add the current directory to Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from cellxgene_downloader import CellxgeneCensusDownloader
+from source.download_cxg.cellxgene_downloader import CellxgeneCensusDownloader
 
 
 class TestCellxgeneCensusDownloader(unittest.TestCase):

@@ -1,3 +1,0 @@
-# ...existing code...
-def test_download_cxg_dataset():
-    pass  # TODO: Implement test
