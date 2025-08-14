@@ -1,0 +1,67 @@
+# Configuration file for cellxgene-census h5ad downloader
+
+# Output directory for downloaded files
+output_directory: "./downloads"
+
+# List of datasets to download (direct URLs)
+datasets:
+  - name: "pbmc3k"
+    url: "https://cellxgene-example-data.czi.technology/pbmc3k.h5ad"
+    description: "Peripheral blood mononuclear cells (PBMC) dataset with 3k cells"
+    
+  - name: "pbmc10k"
+    url: "https://cellxgene-example-data.czi.technology/pbmc10k.h5ad"
+    description: "Peripheral blood mononuclear cells (PBMC) dataset with 10k cells"
+    
+  - name: "mouse_brain"
+    url: "https://cellxgene-example-data.czi.technology/mouse_brain.h5ad"
+    description: "Mouse brain dataset"
+
+# Census query configurations
+census_queries:
+  - name: "specific_dataset_1"
+    description: "Specific dataset from census using dataset_id"
+    query_params:
+      organism: "Homo sapiens"
+      obs_value_filter: 'dataset_id=="8e47ed12-c658-4252-b126-381df8d52a3d"'
+      
+  - name: "human_pbmc_sample"
+    description: "Sample human PBMC data from census"
+    query_params:
+      organism: "Homo sapiens"
+      obs_value_filter: 'tissue_general=="blood"'
+      
+  - name: "mouse_brain_sample"
+    description: "Sample mouse brain data from census"
+    query_params:
+      organism: "Mus musculus"
+      obs_value_filter: 'tissue_general=="brain"'
+
+# Specific dataset IDs to download
+specific_datasets:
+  - name: "dataset_8e47ed12"
+    description: "Specific dataset with ID 8e47ed12-c658-4252-b126-381df8d52a3d"
+    dataset_id: "8e47ed12-c658-4252-b126-381df8d52a3d"
+    organism: "Homo sapiens"
+    
+  - name: "dataset_example_2"
+    description: "Another specific dataset (replace with actual dataset_id)"
+    dataset_id: "your-dataset-id-here"
+    organism: "Homo sapiens"
+
+# Download settings
+download_settings:
+  timeout: 300  # seconds
+  retry_attempts: 3
+  chunk_size: 8192  # bytes
+  verify_ssl: true
+  
+# Logging configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "download.log"
+  console_output: true
+
+# Optional: Custom headers for requests
+headers:
+  User-Agent: "cellxgene-downloader/1.0"
