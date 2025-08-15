@@ -1,8 +1,8 @@
 Gene ID Conversion Script for Cellxgene H5AD Files
 Purpose
 Converts gene identifiers in Cellxgene .h5ad files to Ensembl gene IDs with automatic detection and robust fallback handling.
-Logic Flow
-1. Priority-Based Detection
+
+1. Logic Flow
 
 Input H5AD → Check for existing Ensembl IDs → Use directly (100% success)
                 ↓ (if not found)
